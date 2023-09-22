@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.header-1 {
+    height: 20vh;
+    width: 100%;
+}
+
+.header-1 .nav-bar-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-bar-1 .user-icon {
+    border: 2px solid #3c43a4;
+    height: 5.5vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c43a4;
+    cursor: pointer;
+}
+
+.nav-bar-1 .store-name .store-name-txt h1 {
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+.nav-bar-1 .store-name .store-name-txt p {
+    font-size: 2.7vh;
+    text-align: center;
+    margin-top: 0.5vh;
+    letter-spacing: 7px;
+    padding-left: 0.7vh;
+}
+
+.res-nav{
+    display: none;
+}
+
+.header-1 .search-icon i {
+    border: 2px solid #ff5063;
+    height: 5.5vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5063;
+    cursor: pointer;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-1 .cart-icon i {
+    border: 2px solid #ff5063;
+    height: 5.5vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5vw;
+    cursor: pointer;
+    background-color: #ff5063;
+    border-radius: 5px;
+
+}
+
+.header-2 {
+    height: 8vh;
+    width: 100%;
+    background-color: #3c43a4;
+}
+
+.header-2 .nav-bar-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-2 .nav-bar-2 ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-2 .nav-bar-2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin: 0 6vh;
+    font-size: 2.3vh;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+}
+
+.header-2 .nav-bar-2 ul li a:hover {
+    color: #ff5063;
+}
+
+.main-1 {
+    height: 70vh;
+    width: 100%;
+    background-image: url(imgs/background-img1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 40px 30vh;
+}
+
+.main-1 .m1-box {
+    height: 65vh;
+    width: 13vw;
+    background: linear-gradient(rgba(51, 51, 51, 0.6), rgba(51, 51, 51, 0.6));
+    -webkit-transform: rotate(180deg);
+}
+
+.main-1 .m1-box .m1-box-txt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-1 .m1-box .m1-box-txt h1:nth-child(1) {
+    writing-mode: vertical-rl;
+    color: #ff5063;
+    font-size: 4.5vh;
+    margin: 6vh 0;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.main-1 .m1-box .m1-box-txt h1:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    height: 99px;
+    background: linear-gradient(rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0.6));
+    width: 2px;
+    margin: 20px 0;
+    top: 80%;
+    right: 4vh;
+}
+
+.main-1 .m1-box .m1-box-txt h1:nth-child(2) {
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 5.4vh;
+    margin: 3vh 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.main-2{
+    height: 60vh;
+    width: 100%;
+}
+
+.main-2 .main-2-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-2 .main-2-heading h1{
+    font-size: 5.5vh;
+    font-weight: 400;
+    margin-top: 3.5vh;
+    border-bottom: 2px solid #ff5063;
+}
+
+.main-2 .main-2-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-2 .main-2-boxes .box{
+    height: 27vh;
+    width: 21.9vw;
+    margin: 4vh 4vh;
+    position: relative;
+    transition: 0.5s all ease;
+}
+
+.main-2 .main-2-boxes .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.box .box-content{
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.box .box-content:hover,:focus{
+    opacity: 1;
+    
+}
+
+.box .box-content h3{
+    font-size: 3.2vh;
+    margin: 2vh 0;
+}
+
+.box .box-content p{
+    font-size: 2.9vh;
+}
+
+.box .box-content #box-btn{
+    margin: 2vh 0;
+    height: 5.5vh;
+    width: 10vw;
+    background-color: #ff5063;
+    border: 2px solid #ff5063;
+    color: white;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    transition: 0.7s all ease;
+}
+
+.box .box-content #box-btn:hover{
+    background-color: transparent;
+}
+
+.main-sep{
+    height: 20%;
+    width: auto;
+}
+
+.main-3{
+    height: 60vh;
+    width: 100%;
+    background-image: url(https://p.w3layouts.com/demos_new/30-01-2017/electronic_store-demo_Free/192355906/web/images/44.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left h1{
+    color: #212121;
+    font-size: 5vh;
+    font-weight: 100;
+}
+
+.left h2{
+    color: #212121;
+    font-size: 5vh;
+    font-weight: 100;
+    margin-top: 2.5vh;
+}
+
+.left span{
+    color: #ff5063;
+    font-size: 5vh;
+    font-weight: 100;
+}
+
+.left a{
+    text-decoration: none;
+    color: #ff5063;
+    font-size: 2.2vh;
+    margin-top: 3.5vh;
+    transition: 0.5s all ease;
+}
+
+.left a:hover,:disabled{
+    color: black;
+}
+
+.top-brands{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-brands h1{
+    font-size: 5.5vh;
+    font-weight: 400;
+    margin-top: 3.5vh;
+    border-bottom: 2px solid #ff5063;
+}
+
+.top-brands-imgs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.top-brands-imgs img{
+    transition: all 0.5s ease;
+}
+
+.top-brands-imgs img:hover{
+    transform: translateY(10px) rotateX(10deg) translateY(5px);
+}
+
+.newsletter{
+    background-color: #3c43a4;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsletter .newsletter-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter .newsletter-btns{
+    display: flex;
+}
+
+.newsletter .newsletter-text h1{
+    color: white;
+    font-weight: 600;
+    font-size: 7vh;
+}
+
+.newsletter .newsletter-text p{
+    color: #bfbfbf;
+    margin: 2vh 0;
+    font-weight: 400;
+}
+
+.newsletter .newsletter-btns input{
+    height: 7vh;
+    width: 25vw;
+    border: 0;
+    outline: none;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.newsletter .newsletter-btns #newsletter-btn{
+    height: 7vh;
+    width: 5.5vw;
+    border: 0;
+    outline: none;
+    text-align: center;
+    font-size: 4vh;
+    color: white;
+    background-color: #ff5063;
+    transition: 0.5s all ease;
+}
+
+.newsletter .newsletter-btns #newsletter-btn:hover{
+    background-color: #212121;
+}
+
+.footer-main{
+    height: 21vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-main .footer-main-text p{
+    font-size: 3vh;
+}
+
+.footer-main .footer-main-icons i{
+    margin: 3.4vh 2vh;
+    font-size: 2.8vh;
+    cursor: pointer;
+}

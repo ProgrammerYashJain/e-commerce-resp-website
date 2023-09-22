@@ -1,0 +1,152 @@
+.nav-bar-2{
+    position: relative;
+}
+
+.res-nav i{
+    font-size: 5vh;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    top: 21.8vh;
+    right: 0;
+    bottom: 0;
+    margin: 0 20px;
+
+}
+
+@media (max-width:767px) {
+    .nav-bar-2 ul li{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header-2 .nav-bar-2 ul{
+        flex-direction: column;
+    }
+
+    .h-nav{
+        height: 30vh;
+    }
+
+    .v-nav{
+        opacity: 0;
+    }
+    .header-2 {
+        width: 100%;
+        background-color: #3c43a4;
+        transition: 0.7s all ease;
+        overflow-x: hidden;
+    }
+
+    .res-nav{
+        display: block;
+        z-index: 999;
+    }
+
+    .res-nav i{
+        color: white;
+    }
+
+    .main-1 .m1-box {
+        height: 68vh;
+        width: 45vw;
+    }
+
+    .main-2{
+        height: 200vh;
+        width: 100%;
+    }
+
+    .main-2 .main-2-boxes{
+        flex-direction: column;
+    }
+
+    .main-2 .main-2-boxes .box{
+        height: 27vh;
+        width: 70vw;
+    }
+
+    .box .box-content h3 {
+        font-size: 2vh;
+    }
+
+    .box .box-content p {
+        font-size: 2vh;
+    }
+
+    .box .box-content #box-btn {
+        margin: 2.6vh 0;
+        height: 5.5vh;
+        width: 40vw;
+    }
+
+    .left h1 {
+        color: #212121;
+        font-size: 3vh;
+    }
+
+    .top-brands {
+        height: 115vh;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter .newsletter-btns input {
+        height: 7vh;
+        width: 60vw;
+    }
+
+    .newsletter .newsletter-btns #newsletter-btn {
+        height: 7vh;
+        width: 17.5vw;
+    }
+
+    .newsletter .newsletter-text h1{
+        text-align: center;
+    }
+
+    .newsletter .newsletter-text p {
+        text-align: center;
+    }
+    
+    .footer-main .footer-main-text p{
+        text-align: center;
+    }
+
+    .nav-bar-1 .user-icon {
+        border: 2px solid #3c43a4;
+        height: 5.5vh;
+        width: 20vw;
+        margin: 0 1vh;
+    }
+
+    .nav-bar-1 .store-name .store-name-txt h1 {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .header-1 .search-icon i {
+        width: 13vw;
+    }
+
+    .main-1{
+        padding: 40px 3vh;
+    }
+
+
+    .header-1 .cart-icon i {
+        height: 5.5vh;
+        width: 11vw;
+        font-size: 9.5vw;
+        margin: 0 1vh;
+    }    
+
+.nav-bar-1 .store-name .store-name-txt p {
+    font-size: 1.3vh;
+    text-align: center;
+    margin: 0 1.6vh;
+}
+}
